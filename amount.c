@@ -14,4 +14,5 @@ amt=amt/5;
 printf("\n 1*%d",amt/1);
 return 0;
 
+
 }
