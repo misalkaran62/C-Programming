@@ -2,23 +2,33 @@
 int main()
 {
 float bs,da,hra,tax,totalsalary;
-printf(" enter the basic salary");
+
+int eid;
+char ename[100];
+FILE *fp;
+fp =fopen("salaryslip.txt","w");
+
+printf(" enter the basic details");
+printf("\nID : ");
+scanf("%f",&eid);
+printf("Name : ");
+scanf("%s",&ename);
+printf("basic salary : ");
 scanf("%f",&bs);
-
-printf(" enter the daily alouns");
+printf("DA (%%) : ");
 scanf("%f",&da);
-
-printf(" enter the HRA");
+printf("HRA (%%) : ");
 scanf("%f",&hra);
-
-printf(" enter the tax");
+printf("TAX (%%) : ");
 scanf("%f",&tax);
 totalsalary=bs+((bs*(da+hra-tax))/100);
-printf("totalsalary=%2.f",totalsalary);
-
-
-
-
+fprintf(fp,"\n-----------------Employee salary---------------");
+fprintf(fp,"\n\t\t  : %d",eid);
+fprintf(fp,"\n\t\t  : %d",ename);
+fprintf(fp,"\n\t\t  : %d",bs);
+fprintf(fp,"\n\t\t  : %d",da);
+fprintf(fp,"\n\t\t  : %d",hra);
+fprintf(fp,"\n\t\t  : %d",tax);
+fprintf(fp,"\n\t\ttotalsalary : %.2f",totalsalary);
 return 0;
-
 }
