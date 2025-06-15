@@ -11,7 +11,7 @@ int main()
     printf("Show the Befor swapping :\n");
     printf("a=%d \n", a);
     printf("b=%d \n", b);
-    
+
     a = a + b;
     b = a - b;
     a = a - b;
@@ -20,5 +20,4 @@ int main()
     printf("a=%d \n", a);
     printf("b=%d \n", b);
     return 0;
-
 }
