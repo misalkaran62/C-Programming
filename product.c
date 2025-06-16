@@ -6,16 +6,16 @@ int main()
     char name[100];
     int qty;
     float price, total, discountAmt, discountPercent, finalAmt;
-    printf("Enter details for Product");
-    printf("ID: ");
+    printf("Enter details for   Product");
+    printf("\nID: ");
     scanf("%d", &id);
-    printf("Name: ");
+    printf("\nName: ");
     scanf("%s", name);
-    printf("Quantity: ");
+    printf("\nQuantity: ");
     scanf("%d", &qty);
-    printf("Price (per unit): ");
+    printf("\nPrice (per unit): ");
     scanf("%f", &price);
-    printf("Discount (%%): ");
+    printf("\nDiscount (%%): ");
     scanf("%f", &discountPercent);
 
     total = qty * price;
@@ -24,6 +24,5 @@ int main()
 
     printf("ID\tName\tQty\tPrice\tTotal\tDiscount\tFinal\n");
     printf("%d\t%s\t%d\t %.2f\t%.2f\t%.2f\t\t%.2f\n", id, name, qty, price, total, discountAmt, finalAmt);
-
     return 0;
 }
