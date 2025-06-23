@@ -3,7 +3,6 @@
 int main()
 {
 float bs,da,hra,tax,totalsalary;
-
 int eid;
 char ename[100];
 FILE *fp;
