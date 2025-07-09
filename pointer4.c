@@ -1,3 +1,5 @@
+//call by value
+
 // pointer swaping not show out put
 // #include<stdio.h>
 // void swap(int a, int b)//*a,*b
@@ -16,6 +18,8 @@
 //     return 0;
 // }
 
+
+//call by refernce 
 //this is usg
 #include<stdio.h>
 void swap(int *a, int *b)
