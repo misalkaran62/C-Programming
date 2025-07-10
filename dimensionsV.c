@@ -2,7 +2,7 @@
 int main()
 {
     float r,height,PI=3.14;
-    float surfaceArea,valume;
+    float surfaceArea,volume;
 
     printf(" Enter the radius ");
     scanf("%f",&r);
@@ -11,10 +11,10 @@ int main()
     scanf("%f",&height);
 
     surfaceArea = 2*PI*r*(r=height);
-    valume= PI * r*r*height;
+    volume= PI * r*r*height;
 
     printf("surface area of the =%.2f",surfaceArea);
-    printf("\nvalume of the cylinder = %.2f",valume);
+    printf("\nvalume of the cylinder = %.2f",volume);
 
     return 0;
 }

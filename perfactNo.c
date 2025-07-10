@@ -12,7 +12,7 @@ int main()
     //6 and 28 is only perfact number 
     if (sum == n)
 
-        printf("Perfact umber ");
+        printf("Perfact number ");
 
     else
         printf("Not perfact number ");

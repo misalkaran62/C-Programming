@@ -1,5 +1,5 @@
 #include <stdio.h>
-int mian()
+int main()
 {
     float l, b, h;
     float surfacearea, volume;
